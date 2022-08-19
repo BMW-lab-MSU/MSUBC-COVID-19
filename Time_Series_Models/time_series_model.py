@@ -158,7 +158,7 @@ y_1_graph_real = []
 
 z = 0
 
-while z <= 68: #Change to 91 if zeros are NOT removed
+while z <= 68: #Change to 91 if zeros are included (for apprx. three month predictoins)
 
 
   gap = abs(date.today()-date(2021, 2, 28)).days                          #This sets the last day in the training data.
@@ -257,14 +257,18 @@ while z <= 68: #Change to 91 if zeros are NOT removed
 
   seq = list(df[target_county])     
 
+  gap2 = gap
+    
+  #Remove Zeros
+
+  #-----------------#    Commnt out this block to have the network predict with zeros included
+  
   gap2 = gap + 4
   for i in range(len(seq)-(interval+7)-gap,len(seq)):
     if seq[i] == 0:
       gap2 = gap2 -1 
 
-  #Remove Zeros
-
-  #-----------------#    Commnt out this block to have the network predict with zeros included
+  
   flag = True
 
   while flag==True:                                         
@@ -625,7 +629,7 @@ while i < 70:
   i = i + 1
 
 
-#To switch back add 22 to the large numbers
+#To switch back to three month zero predction 68->91 add 22 to the large numbers
 
 abs_df['Actual Cases y'] = y4
 abs_df['Days x'] = x1
@@ -635,7 +639,6 @@ abs1_df['Actual Cases 3 day y'] = y2[0:67]
 abs1_df['Days 3 x'] = x1[2:69] 
 abs2_df['Actual Cases 7 day y'] = y3[0:63]
 abs2_df['Days 7 x'] = x1[6:69]
-
 
 
 

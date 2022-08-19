@@ -20,7 +20,7 @@ gap = abs(date.today()-date(2021, 2, 28)).days                          #This se
 interval = 14
 optimizer = keras.optimizers.Adam(learning_rate=0.0008)
 LOSS = "huber_loss"
-epochs = 50
+epochs = 150
 
 average_mae_test1 = []
 average_mae_test2 = []

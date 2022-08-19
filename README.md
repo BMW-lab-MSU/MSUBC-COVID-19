@@ -14,12 +14,12 @@ Model structure
 
 Predictions
 
-Analysis
+Evaluation
 
 Graphing*
 
 ---------------------------------------------------------------
-*not all models are graphed
+*Only Time series models are graphed
 
 This code is most easily run on Google Colab (since you dont need to install anything to run it),
 but will also run on a local machine with the correct packages installed.

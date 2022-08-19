@@ -42,7 +42,7 @@ Importing both the static and dynamic data.  REGIONAL
 '''
 
 #Statics
-county = pd.read_csv('https://github.com/duckie22/CBOE/blob/a508a34b13c48904d337bd6c51b34ee8671e449c/Use4.csv?raw=true')
+county = pd.read_csv('https://github.com/BMW-lab-MSU/MSUBC-COVID-19/blob/4f52afcb0c4618ee681caf24d490edf8b47f090f/County_data_folder/data.csv?raw=true')
 county = county.replace(regex={'WY': 'Wyoming', 'ID': 'Idaho', 'MT': 'Montana', 'SD':'South Dakota', 'ND': 'North Dakota', ' County':'', 'gop':1,'dem':0})
 county_dict = county.drop(['Area_Name', 'State','FIPStxt','Unnamed: 0'], axis = 1)
 scaler = MinMaxScaler()

@@ -2,7 +2,7 @@
 Code for effort between Montana State University and Billings Clinic to track and predict Covid-19 cases and outbreaks.
 
 
-The following repository contains the code used in the research of the MSUBS-COVID-19 effort. All models are equiped to be downloaded and run.
+The following repository contains the code used in the research of the MSU-BC-COVID-19 effort. All models are equiped to be downloaded and run.
 The code is structed gernerally as followed.
 
 -------------------------------------------------------------
